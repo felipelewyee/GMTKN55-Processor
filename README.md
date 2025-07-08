@@ -33,4 +33,5 @@ cp -r BH76 BH76RC
 julia xyz.jl
 mkdir benchmark
 mv *.xyz benchmark
+mv *.yaml benchmark
 ```
