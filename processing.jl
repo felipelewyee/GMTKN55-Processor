@@ -2,7 +2,7 @@ using CSV
 using DataFrames
 using YAML
 
-println("Enter name of *.ref file (e.g. benchmark.ref, P30-5.ref, Slim05.ref, Diet030.ref:")
+println("Enter name of *.ref file (e.g. benchmark, P30-5, Slim05, Diet030):")
 benchmark = readline()
 
 f = open(benchmark * ".ref")

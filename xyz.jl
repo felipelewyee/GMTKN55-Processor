@@ -2,7 +2,7 @@ using CSV
 using DataFrames
 using YAML
 
-println("Enter name of *.ref file (e.g. benchmark.ref, P30-5.ref, Slim05.ref, Diet030.ref:")
+println("Enter name of *.ref file (e.g. benchmark, P30-5, Slim05, Diet030):")
 benchmark = readline()
 
 # Read yaml and look for unique sets
@@ -52,7 +52,6 @@ for set_name in sets
         charge = row.charge[1]
 	mult = row.mult[1]
 
-        println(mol)
         xyz = ""
         for (i, line) in enumerate(eachline(set_name*"/"*mol*"/"*"struc.xyz"))
 	    if (i==1)
