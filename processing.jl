@@ -2,7 +2,7 @@ using CSV
 using DataFrames
 using YAML
 
-benchmark = readline()
+benchmark = readline("Enter name of *.ref file (e.g. benchmark.ref, P30-5.ref, Slim05.ref, Diet030.ref:")
 
 f = open(benchmark * ".ref")
 data = Dict()    
