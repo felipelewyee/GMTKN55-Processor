@@ -2,7 +2,7 @@
 
 This scripts aims to get the files of GMTKN55 and extract the information for other subsets.
 
-A file *benchmark.txt* with the following format is expected
+A file *benchmark.ref* with the following format is expected
 ```
 AHB21 1 2 4
 W4-11 1 3 5

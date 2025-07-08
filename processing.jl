@@ -2,7 +2,7 @@ using CSV
 using DataFrames
 using YAML
 
-benchmark = "Slim05"
+benchmark = readline()
 
 f = open(benchmark * ".ref")
 data = Dict()    
