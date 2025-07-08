@@ -25,6 +25,9 @@ sed -i -e "s/\"//g" *.yaml
 sed -i -e "s/, /, \"/g" *.yaml
 sed -i -e "s/xyz/xyz\"/g" *.yaml
 
+for file in *.tar; do echo $file; tar -xvf $file; done
+cp -r BH76 BH76RC
+
 julia xyz.jl
 mkdir benchmark
 mv *.xyz benchmark
