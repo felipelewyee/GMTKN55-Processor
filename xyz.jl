@@ -2,7 +2,8 @@ using CSV
 using DataFrames
 using YAML
 
-benchmark = "Slim05"
+println("Enter name of *.ref file (e.g. benchmark.ref, P30-5.ref, Slim05.ref, Diet030.ref:")
+benchmark = readline()
 
 # Read yaml and look for unique sets
 data = YAML.load_file(benchmark * ".yaml")
@@ -44,12 +45,10 @@ end
 # Generate the xyz files
 data = YAML.load_file(benchmark * ".yaml")
 for set_name in sets
-    println(set_name)
     mols = mols_in_sets[set_name]
     cms = char_mult[set_name]
     for mol in mols
         row = cms[cms.molname .== mol, :]
-	println(row)
         charge = row.charge[1]
 	mult = row.mult[1]
 

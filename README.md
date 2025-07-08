@@ -16,6 +16,8 @@ Then, execute the following scripts in Julia
 
 ## Recommended workflow
 
+Replace *benchmark* with the corresponding name (e.g. Slim05) and execute the following lines 
+
 ```bash
 julia data.jl
 julia processing.jl
