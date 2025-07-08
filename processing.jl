@@ -14,7 +14,7 @@ for line in readlines(f)
     println("===============================")
     println(set)
 
-    df = CSV.read(set * ".csv", DataFrame)
+    df = CSV.read(set * ".csv", DataFrame, types=String)
     df = df[!, 2:end] #Remove index column
     nmols = Int((size(df)[2] - 1)/2) #Number of mols
 
