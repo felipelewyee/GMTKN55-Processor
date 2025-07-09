@@ -15,7 +15,6 @@ sets = ["W4-11", "G21EA", "G21IP", "DIPCS10", "PA26", "SIE4x4", "ALKBDE10", "YBD
 	"RG18", "ADIM6", "S22", "S66", "HEAVY28", "WATER27", "CARBHB12", "PNICO23", "HAL59", "AHB21", "CHB6", "IL16", 
 	"IDISP", "ICONF", "ACONF", "Amino20x4", "PCONF21", "MCONF", "SCONF", "UPU23", "BUT14DIOL"]
 
-sets = ["HAL59"] 
 for set in sets
     geom_url = create_url("http://www.thch.uni-bonn.de/tc.old/downloads/GMTKN/GMTKN55/SET.tar", set)
     ref_url = create_url("http://www.thch.uni-bonn.de/tc.old/downloads/GMTKN/GMTKN55/SETref.html", set)
