@@ -39,7 +39,11 @@ for set in sets
         ]
 	data_rows = data[2:end]
         df = DataFrame(data_rows, :auto)
-	CSV.write(set * ".csv", permutedims(df))
+
+	# Commented to avoid overwritting manually formated *.csv
+	# because the downloaded HAL59.csv has a problem with
+	# a comma on entry 45 (9/Jul/2025)
+	#CSV.write(set * ".csv", permutedims(df))
     catch
         println("Error downloading file: $set")
     end
