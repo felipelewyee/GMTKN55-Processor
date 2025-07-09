@@ -35,3 +35,6 @@ mkdir benchmark
 mv *.xyz benchmark
 mv *.yaml benchmark
 ```
+
+> [!NOTE]
+> Some usefull ref files can be found in Examples-ref for Diet Set, Poison Set and Slim Set
