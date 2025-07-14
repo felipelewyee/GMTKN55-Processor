@@ -60,12 +60,8 @@ for set_name in sets
                 xyz = xyz * string(charge) * " " * string(mult) * "\n"
             elseif (i>=2)
                 atom, x, y, z = split(line)
-		if length(atom) > 1
-		    formatted_line = replace(line, atom => uppercasefirst(lowercase(atom)))
-		    xyz = xyz * formatted_line * "\n"
-		else
-		    xyz = xyz * line * "\n"
-		end
+		formatted_line = replace(line, atom => uppercasefirst(lowercase(atom)))
+		xyz = xyz * formatted_line * "\n"
             end
         end
         open(set_name * "-" * mol*".xyz", "w") do fmol
